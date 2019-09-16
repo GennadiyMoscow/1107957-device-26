@@ -23,7 +23,7 @@
       </ul>
     </header>
     <main>
-      <h2>Моноподы для селфи</h2>
+      <h2 class="visually-hidden">Моноподы для селфи</h2>
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог таваров</a></li>
@@ -31,10 +31,50 @@
       </ul>
       <div>
         <h2>Фильтр</h2>
-        <!-- Здесь будет форма -->
+        <form action="index.html" method="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="filter-black" name="color-black" checked>
+                <label for="filter-black">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-white" name="color-white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-blue" name="color-blue" checked>
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-red" name="color-red" checked>
+                <label for="filter-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-pink" name="color-pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" id="filter-bluetooth-yes" name="yes" checked>
+                <label for="filter-bluetooth-yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="filter-bluetooth-no" name="no">
+                <label for="filter-bluetooth-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </div>
       <section>
-        <h2>Список товаров</h2>
+        <h2 class="visually-hidden">Список товаров</h2>
         <ul>
           <li>
             <h3>
